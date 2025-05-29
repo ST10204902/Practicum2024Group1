@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -21,8 +22,8 @@ class WeatherActivity : AppCompatActivity() {
         val condition = arrayOf("Sunny", "Cloudy", "Rainy", "Windy", "Stormy", "Snowy", "Foggy")
 
         val averageTemperatureTextView = findViewById<TextView>(R.id.averageTemperatureTextView)
-        val viewDetailsButton = findViewById<TextView>(R.id.viewDetailsButton)
-        val exitButton = findViewById<TextView>(R.id.exitButton)
+        val viewDetailsButton = findViewById<AppCompatButton>(R.id.viewDetailsButton)
+        val exitButton = findViewById<AppCompatButton>(R.id.exitButton)
 
         val averageTemperatureValue = calculateAverageTemperature(minTemp, maxTemp)
 
